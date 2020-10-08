@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+header {
+  font-size: 18px;
+}
+
+footer {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.container-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.numbers-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0px 20px 0px 0px;
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  min-width: 200px;
+  margin: 0px 0px 16px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #72c3dc;
+  border: #72c3dc;
+  border-radius: 5px;
+  box-shadow: 0px 3px #2b8ead;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #2b8ead;
+  border-color: #2b8ead;
+}
+
+.numbers-card div {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 6em;
+}
+
+.number-1,
+.number-8 {
+  background: #6f98a8;
+}
+
+.number-2,
+.number-4 {
+  background: #2b8ead;
+}
+
+.number-3,
+.number-5,
+.number-9 {
+  background: #2f454e;
+}
+
+.number-6,
+.number-7 {
+  background: #bfbfbf;
+}
+
+@media screen and (max-width: 650px) {
+  html,
+  body {
+    background-color: #fff;
+  }
+
+  header {
+    background-color: #333333;
+    color: #fff;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .buttons-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  .btn {
+    display: inline;
+    padding: 14px 6px;
+    font-size: 14px;
+    min-width: 80px;
+    margin: 10px 4px;
+  }
+
+  .numbers-card {
+    grid-template-columns: auto;
+    width: auto;
+  }
+
+  .numbers-card div {
+    min-height: 50px;
+    color: #000;
+    font-size: 1em;
+    background-color: #efefef;
+    border-radius: 3px;
+    margin: 3px;
+  }
+
+  .number-1,
+  .number-8 {
+    border-left: 5px solid #6f98a8;
+  }
+
+  .number-2,
+  .number-4 {
+    border-left: 5px solid #2b8ead;
+  }
+
+  .number-3,
+  .number-5,
+  .number-9 {
+    border-left: 5px solid #2f454e;
+  }
+
+  .number-6,
+  .number-7 {
+    border-left: 5px solid #bfbfbf;
+  }
+}
